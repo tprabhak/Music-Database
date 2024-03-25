@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <title> Music Home</title>
+    <link rel= "stylesheet" type = "text/css" href = "css/style.css" crossorigin="anonymous" >
+    <script src = client.js></script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1> Music Library</h1>
+      </div>
+      <div class = "genre">
+        <button onclick="getAllGenres()">get all genres</a>
+      </div>
+      <div>
+        <button onclick="getAllArtists()">get all artists</a>
+        </div>
+      <div>
+        <button onclick="getAllTracks()">get all tracks</a>
+      </div>
+
+      <div class = "search">
+        <input type="number" id ="SearchArtistById">
+        <button onclick="SearchArtistById()">search artist by Id</a>
+      </div>
+
+
+      <div class = "search">
+        <input type="number" id ="SearchTrackById">
+        <button onclick="SearchTrackById()">search track by Id</a>
+      </div>
+
+
+      <div class = "search">
+        <input type="text" id ="Search">
+        <button onclick="searchAllTracks()">search track and album</a>
+      </div>
+
+      <div class = "search">
+        <input type="text" id ="SearchArtist">
+        <button onclick="searchAllArtists()">search artist by name</a>
+      </div>
+
+      <div class = "search">
+        <input type="text" id ="getTrackIdOfList">
+        <button onclick="getTrackIdOfList()">get the list of track id</a>
+      </div>
+
+      <div class = "search">
+        <input type="text" id ="playlistName">
+        <input type="text" id ="trackData">
+        <button onclick="saveTrackIds()">save tracks to a list</a>
+      </div>
+
+      <div class = "search">
+        <input type="text" id ="deleteList">
+        <button onclick="deleteList()">delete a list of tracks</a>
+      </div>
+
+      <div class="searchByTrackName">
+        <input type="text" id =searchByTrackName placeholder="Search indiviudal track by name">
+        <button onclick="searchByTrackName()">Search by Track Name</a>
+      </div>
+      <div class="searchByArtistName">
+        <input type="text" id =searchByArtistName placeholder="Search indiviudal artist by name">
+        <button onclick="searchByArtistName()">Search by Artist Name</a>
+      </div>
+      <div class="searchAlbum">
+        <input type="text" id =SearchByAlbumName placeholder="Search indiviudal album by name">
+        <button onclick="SearchByAlbumName()">Search by Album Name</a>
+      </div>
+      <div>
+        <input type="text" id ="createList">
+        <button onclick="createList()">Create List</a>
+      </div>
+      <div>
+        <input type="text" id ="retrieveListWithDetails">
+        <button onclick="retrieveListWithDetails()">Retrieve List</a>
+      </div>
+      <button onclick="getAllLists()">Get All Lists</a>
+    </div>
+      <div id = "screen">
+
+      </div>
+      <div id = "track_details">
+            <table>
+              <thead>
+                <th>Track ID</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Play time</th>
+              </thead>
+              <tbody id = "mainDisplay">
+              </tbody>
+
+            </table>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <script type="text/javascript" src="dist/purify.min.js"></script> -->
